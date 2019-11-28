@@ -15,6 +15,8 @@
 		E048173A238F56F200A7C654 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0481738238F56F200A7C654 /* LaunchScreen.storyboard */; };
 		E0481745238F56F200A7C654 /* Github_Owner_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0481744238F56F200A7C654 /* Github_Owner_ListTests.swift */; };
 		E0481750238F56F200A7C654 /* Github_Owner_ListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E048174F238F56F200A7C654 /* Github_Owner_ListUITests.swift */; };
+		E048175E238F572200A7C654 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E048175D238F572200A7C654 /* RemoteImageView.swift */; };
+		E0481760238F574700A7C654 /* RemoteImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E048175F238F574700A7C654 /* RemoteImageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		E048174B238F56F200A7C654 /* Github Owner ListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Github Owner ListUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E048174F238F56F200A7C654 /* Github_Owner_ListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Github_Owner_ListUITests.swift; sourceTree = "<group>"; };
 		E0481751238F56F200A7C654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E048175D238F572200A7C654 /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
+		E048175F238F574700A7C654 /* RemoteImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				E0481738238F56F200A7C654 /* LaunchScreen.storyboard */,
 				E048173B238F56F200A7C654 /* Info.plist */,
 				E0481735238F56F200A7C654 /* Preview Content */,
+				E048175D238F572200A7C654 /* RemoteImageView.swift */,
+				E048175F238F574700A7C654 /* RemoteImageViewModel.swift */,
 			);
 			path = "Github Owner List";
 			sourceTree = "<group>";
@@ -268,7 +274,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E048172E238F56F200A7C654 /* AppDelegate.swift in Sources */,
+				E0481760238F574700A7C654 /* RemoteImageViewModel.swift in Sources */,
 				E0481730238F56F200A7C654 /* SceneDelegate.swift in Sources */,
+				E048175E238F572200A7C654 /* RemoteImageView.swift in Sources */,
 				E0481732238F56F200A7C654 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

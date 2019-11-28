@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        RemoteImageView(url: URL(string: "https://placekitten.com/200/300")!)
     }
 }
 
