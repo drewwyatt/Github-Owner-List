@@ -14,13 +14,17 @@ struct Owner : Decodable, Identifiable {
     let avatar_url: URL
 }
 
-struct GHOrg : Decodable {
+struct Repo : Decodable {
     let id: Int
     let owner: Owner
 }
 
+struct GHSearchResponse : Decodable {
+    var items: [Repo]
+}
+
 class OwnerListViewModel : ObservableObject {
-    private let url: URL = URL(string: "https://api.github.com/orgs/octokit/repos")!
+    private let url: URL = URL(string: "https://api.github.com/search/repositories?q=todo")!
     enum State {
         case idle
         case loading
@@ -36,9 +40,9 @@ class OwnerListViewModel : ObservableObject {
             DispatchQueue.main.async {
                 let decoder = JSONDecoder()
                 self?.state =  data.flatMap { d in
-                    try! decoder.decode([GHOrg].self, from: d) }.map { orgs in
-                        orgs.map { org in
-                            org.owner
+                    try! decoder.decode(GHSearchResponse.self, from: d) }.map { response in
+                        response.items.map { repo in
+                            repo.owner
                         }
                     }.map(State.loaded) ?? .error
     

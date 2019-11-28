@@ -38,7 +38,7 @@ struct OwnerItemView: View {
     
     var body: some View {
         HStack {
-            RemoteImageView(url: owner.avatar_url)
+            RemoteImageView(url: owner.avatar_url).frame(width: 50, height: 50, alignment: .center)
             Text(owner.login)
         }
     }

@@ -24,7 +24,7 @@ struct RemoteImageView: View {
         case .loaded(let img):
             return AnyView(Image(uiImage: img).resizable())
         case .idle, .loading:
-            return AnyView(Text("loading..."))
+            return AnyView(LoadingView())
         case .error:
             return AnyView(Text("error"))
         }
