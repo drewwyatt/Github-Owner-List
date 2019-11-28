@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E01C073823904AF400683BB8 /* OwnerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01C073723904AF400683BB8 /* OwnerListView.swift */; };
+		E01C073A23904CCB00683BB8 /* OwnerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01C073923904CCB00683BB8 /* OwnerListViewModel.swift */; };
+		E01C073C239058D100683BB8 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01C073B239058D100683BB8 /* LoadingView.swift */; };
 		E048172E238F56F200A7C654 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E048172D238F56F200A7C654 /* AppDelegate.swift */; };
 		E0481730238F56F200A7C654 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E048172F238F56F200A7C654 /* SceneDelegate.swift */; };
 		E0481732238F56F200A7C654 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0481731238F56F200A7C654 /* ContentView.swift */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E01C073723904AF400683BB8 /* OwnerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerListView.swift; sourceTree = "<group>"; };
+		E01C073923904CCB00683BB8 /* OwnerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerListViewModel.swift; sourceTree = "<group>"; };
+		E01C073B239058D100683BB8 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		E048172A238F56F200A7C654 /* Github Owner List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Github Owner List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E048172D238F56F200A7C654 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E048172F238F56F200A7C654 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +118,9 @@
 				E0481735238F56F200A7C654 /* Preview Content */,
 				E048175D238F572200A7C654 /* RemoteImageView.swift */,
 				E048175F238F574700A7C654 /* RemoteImageViewModel.swift */,
+				E01C073723904AF400683BB8 /* OwnerListView.swift */,
+				E01C073923904CCB00683BB8 /* OwnerListViewModel.swift */,
+				E01C073B239058D100683BB8 /* LoadingView.swift */,
 			);
 			path = "Github Owner List";
 			sourceTree = "<group>";
@@ -275,7 +284,10 @@
 			files = (
 				E048172E238F56F200A7C654 /* AppDelegate.swift in Sources */,
 				E0481760238F574700A7C654 /* RemoteImageViewModel.swift in Sources */,
+				E01C073A23904CCB00683BB8 /* OwnerListViewModel.swift in Sources */,
+				E01C073823904AF400683BB8 /* OwnerListView.swift in Sources */,
 				E0481730238F56F200A7C654 /* SceneDelegate.swift in Sources */,
+				E01C073C239058D100683BB8 /* LoadingView.swift in Sources */,
 				E048175E238F572200A7C654 /* RemoteImageView.swift in Sources */,
 				E0481732238F56F200A7C654 /* ContentView.swift in Sources */,
 			);

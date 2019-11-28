@@ -6,7 +6,6 @@
 //  Copyright © 2019 Drew Wyatt. All rights reserved.
 //
 
-import Combine
 import UIKit
 
 class RemoteImageViewModel : ObservableObject {
@@ -14,23 +13,28 @@ class RemoteImageViewModel : ObservableObject {
         case idle
         case loading
         case loaded(UIImage)
+        case error
     }
     
     @Published var state: State = .idle
     private let url: URL;
+    private var hasFetched: Bool = false
     
     init(url: URL) {
         self.url = url
     }
     
     func fetchImage() {
-        state = .loading
-        URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
-            DispatchQueue.main.async {
-                self?.state = data
-                    .flatMap(UIImage.init)
-                    .map(State.loaded) ?? .idle
-            }
-        }.resume()
+        if (!hasFetched) {
+            hasFetched = true
+            state = .loading
+            URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
+                DispatchQueue.main.async {
+                    self?.state = data
+                        .flatMap(UIImage.init)
+                        .map(State.loaded) ?? .error
+                }
+            }.resume()
+        }
     }
 }

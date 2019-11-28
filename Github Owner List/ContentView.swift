@@ -10,7 +10,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        RemoteImageView(url: URL(string: "https://placekitten.com/200/300")!)
+//        RemoteImageView(url: URL(string: "https://placekitten.com/200/300")!)
+        OwnerListView()
     }
 }
 
